@@ -64,9 +64,9 @@ export interface SubjectGrade {
   subjectName: string;
   credits: number;
   attendanceScore: number; // 10%
-  midtermScore: number;    // 20%
+  midtermScore: number; // 20%
   assignmentScore: number; // 20%
-  finalScore: number;      // 50%
+  finalScore: number; // 50%
   totalScore10: number;
   letterGrade: string;
   isPassed: boolean;
@@ -74,14 +74,14 @@ export interface SubjectGrade {
 
 export const INITIAL_STUDENT_PROFILE: StudentProfile = {
   studentId: 'B23DCCC127',
-  fullName: 'Nguyễn Văn A',
-  className: 'D23CQCC01-B',
-  major: 'Công nghệ Thông tin',
-  faculty: 'Khoa Công nghệ Thông tin 1',
+  fullName: 'ĐỖ ĐỨC PHONG',
+  className: 'D23CCPM02',
+  major: 'Công nghệ Thông tin (UDU)',
+  faculty: 'Viện khoa học kỹ thuật Bưu điện',
   email: 'b23dccc127@stu.ptit.edu.vn',
   phone: '0987654321',
-  dob: '15/08/2005',
-  academicYear: '2023 - 2028',
+  dob: '08/012/2003',
+  academicYear: '2023 - 2027',
   gpa: 3.48,
   totalCredits: 135,
   completedCredits: 45,
@@ -99,7 +99,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 2',
     scheduleTime: '07:00 - 09:15',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Trang bị kiến thức và kỹ năng phát triển ứng dụng di động đa nền tảng bằng React Native, quản lý trạng thái, navigation, và kết nối API.',
+    description:
+      'Trang bị kiến thức và kỹ năng phát triển ứng dụng di động đa nền tảng bằng React Native, quản lý trạng thái, navigation, và kết nối API.',
     syllabus: [
       'Tổng quan React Native và Kiến trúc di động',
       'Layout & Styling với Flexbox',
@@ -120,7 +121,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 3',
     scheduleTime: '09:30 - 11:45',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Nghiên cứu các mẫu kiến trúc phần mềm, nguyên lý thiết kế SOLID, kiến trúc Clean Architecture và Microservices.',
+    description:
+      'Nghiên cứu các mẫu kiến trúc phần mềm, nguyên lý thiết kế SOLID, kiến trúc Clean Architecture và Microservices.',
     syllabus: [
       'Tổng quan về kiến trúc phần mềm',
       'Mẫu thiết kế (Design Patterns)',
@@ -140,7 +142,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 4',
     scheduleTime: '13:00 - 15:15',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Cung cấp kiến thức về thiết kế phân mảnh, truy vấn phân tán, tối ưu hóa truy vấn và tính nhất quán dữ liệu.',
+    description:
+      'Cung cấp kiến thức về thiết kế phân mảnh, truy vấn phân tán, tối ưu hóa truy vấn và tính nhất quán dữ liệu.',
     syllabus: [
       'Khái niệm CSDL phân tán',
       'Phân mảnh ngang, dọc và hỗn hợp',
@@ -160,7 +163,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 5',
     scheduleTime: '15:30 - 17:00',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Tìm hiểu về các lỗ hổng bảo mật phổ biến, mã hóa dữ liệu, xác thực và phân quyền trong hệ thống phần mềm.',
+    description:
+      'Tìm hiểu về các lỗ hổng bảo mật phổ biến, mã hóa dữ liệu, xác thực và phân quyền trong hệ thống phần mềm.',
     syllabus: [
       'Mật mã học cơ bản & Khóa công khai',
       'Các lỗ hổng OWASP Top 10',
@@ -179,7 +183,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 6',
     scheduleTime: '07:00 - 09:15',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Khai phá dữ liệu văn bản, phân loại cảm xúc, mô hình Transformer và ứng dụng mô hình ngôn ngữ lớn.',
+    description:
+      'Khai phá dữ liệu văn bản, phân loại cảm xúc, mô hình Transformer và ứng dụng mô hình ngôn ngữ lớn.',
     syllabus: [
       'Tiền xử lý văn bản tiếng Việt',
       'Mô hình biểu diễn Word2Vec, TF-IDF',
@@ -198,7 +203,8 @@ export const INITIAL_SUBJECTS: Subject[] = [
     scheduleDay: 'Thứ 7',
     scheduleTime: '09:30 - 11:45',
     semester: 'Học kỳ 1 (2026 - 2027)',
-    description: 'Rèn luyện kỹ năng mềm, giải quyết xung đột, quản lý thời gian và kỹ năng thuyết trình trước đám đông.',
+    description:
+      'Rèn luyện kỹ năng mềm, giải quyết xung đột, quản lý thời gian và kỹ năng thuyết trình trước đám đông.',
     syllabus: [
       'Tâm lý học nhóm và vai trò thành viên',
       'Kỹ năng lắng nghe & phản hồi tích cực',
@@ -307,12 +313,14 @@ export const INITIAL_ASSIGNMENTS: Assignment[] = [
     subjectCode: 'INT1412',
     subjectName: 'Lập trình ứng dụng di động',
     title: 'Bài thực hành 3: Xây dựng App Quản lý học tập',
-    description: 'Xây dựng ứng dụng hoàn chỉnh kết hợp Bottom Tab Navigator và Native Stack Navigator, quản lý dữ liệu bằng FlatList và AsyncStorage.',
+    description:
+      'Xây dựng ứng dụng hoàn chỉnh kết hợp Bottom Tab Navigator và Native Stack Navigator, quản lý dữ liệu bằng FlatList và AsyncStorage.',
     dueDate: '25/10/2026',
     dueTime: '23:59',
     isUrgent: true,
     isCompleted: false,
-    submissionFormat: 'Nộp link GitHub repository và file nén mã nguồn lên hệ thống.',
+    submissionFormat:
+      'Nộp link GitHub repository và file nén mã nguồn lên hệ thống.',
   },
   {
     id: 'asm-2',
@@ -320,7 +328,8 @@ export const INITIAL_ASSIGNMENTS: Assignment[] = [
     subjectCode: 'INT1434',
     subjectName: 'Kiến trúc phần mềm',
     title: 'Bài tập nhóm: Thiết kế sơ đồ Component Microservices',
-    description: 'Thiết kế kiến trúc hệ thống thương mại điện tử với tối thiểu 4 microservices độc lập và API Gateway.',
+    description:
+      'Thiết kế kiến trúc hệ thống thương mại điện tử với tối thiểu 4 microservices độc lập và API Gateway.',
     dueDate: '28/10/2026',
     dueTime: '21:00',
     isUrgent: true,
@@ -333,7 +342,8 @@ export const INITIAL_ASSIGNMENTS: Assignment[] = [
     subjectCode: 'INT1406',
     subjectName: 'Cơ sở dữ liệu phân tán',
     title: 'Bài tập 2: Tối ưu hóa câu truy vấn phân tán',
-    description: 'Phân tích cây toán tử đại số quan hệ và đề xuất phương án truyền dữ liệu giảm thiểu chi phí mạng.',
+    description:
+      'Phân tích cây toán tử đại số quan hệ và đề xuất phương án truyền dữ liệu giảm thiểu chi phí mạng.',
     dueDate: '02/11/2026',
     dueTime: '23:59',
     isUrgent: false,
@@ -346,12 +356,14 @@ export const INITIAL_ASSIGNMENTS: Assignment[] = [
     subjectCode: 'INT1450',
     subjectName: 'An toàn và bảo mật hệ thống',
     title: 'Báo cáo Lab 1: Khai thác và vá lỗi XSS',
-    description: 'Thực hiện mô phỏng khai thác Stored XSS trên môi trường DVWA và viết code filter phòng tránh.',
+    description:
+      'Thực hiện mô phỏng khai thác Stored XSS trên môi trường DVWA và viết code filter phòng tránh.',
     dueDate: '15/10/2026',
     dueTime: '23:59',
     isUrgent: false,
     isCompleted: true,
-    submissionFormat: 'File Word/PDF kèm ảnh chụp minh chứng từng bước thực hiện.',
+    submissionFormat:
+      'File Word/PDF kèm ảnh chụp minh chứng từng bước thực hiện.',
   },
   {
     id: 'asm-5',
@@ -359,7 +371,8 @@ export const INITIAL_ASSIGNMENTS: Assignment[] = [
     subjectCode: 'INT1478',
     subjectName: 'Xử lý ngôn ngữ tự nhiên',
     title: 'Mini Project: Phân loại sắc thái bình luận khách hàng',
-    description: 'Xây dựng pipeline tiền xử lý tiếng Việt bằng Underthesea và huấn luyện mô hình phân loại Logistic Regression.',
+    description:
+      'Xây dựng pipeline tiền xử lý tiếng Việt bằng Underthesea và huấn luyện mô hình phân loại Logistic Regression.',
     dueDate: '10/11/2026',
     dueTime: '22:00',
     isUrgent: false,
